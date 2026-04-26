@@ -33,46 +33,6 @@ public class Voo {
         this.estadoDoVoo = estadoDoVoo;
     }
     
-    //metodo adicionar passageiros
-    public void adicionarPassageiros(Passageiro passageiroNovo){
-        if(passageiros.contains(passageiroNovo)){
-            System.out.println("Passageiro ja existe");
-        }
-        else{
-            passageiros.add(passageiroNovo);
-        }
-    }
-    
-    //metodo remover passageiros
-    public void removerPassageiros(Passageiro CPF){
-        if(!passageiros.contains(CPF)){
-            System.out.println("Passageiro nao existe");
-        }
-        else{
-            passageiros.remove(CPF);
-        }
-    }
-    
-    //metodo adicionar escalas
-    public void adicionarEscalas(String escalaNova){
-        if(escalas.contains(escalaNova)){
-            System.out.println("Escala ja existe");
-        }
-        else{
-            escalas.add(escalaNova);
-        }
-    }
-    
-    //metodo remover escalas
-    public void removerEscalas(String escala){
-        if(!escalas.contains(escala)){
-            System.out.println("Escala nao existe");
-        }
-        else{
-            escalas.remove(escala);
-        }
-    }
-    
     //metodo alterar o estado do voo
     public void alterarEstado(String novoEstado){
         if (novoEstado.equalsIgnoreCase("Aguardando decolagem") || novoEstado.equalsIgnoreCase("Voando") ||novoEstado.equalsIgnoreCase("Concluído")){
@@ -81,16 +41,6 @@ public class Voo {
         } 
         else {
             System.out.println("Estado inválido. Use: 'Aguardando decolagem', 'Voando' ou 'Concluído'.");
-        }
-    }
-    
-    //metodo verificar se o voo está abaixo da capacidade mínima.
-    public void verificarCapacidade() {
-        if (passageiros.size() < 5) {
-            System.out.println("Voo abaixo da capacidade minima.");
-        } 
-        else {
-            System.out.println("Voo acima da capacidade minima.");
         }
     }
     
