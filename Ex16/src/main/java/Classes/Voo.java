@@ -24,12 +24,12 @@ public class Voo {
     }
     
     //metodo construtor com parametro
-    public Voo(String numVoo, String destino, int capacidadeMaxima, List<Passageiro> passageiros, List<String> escalas, String estadoDoVoo) {
+    public Voo(String numVoo, String destino, int capacidadeMaxima, String estadoDoVoo) {
         this.numVoo = numVoo;
         this.destino = destino;
         this.capacidadeMaxima = capacidadeMaxima;
-        this.passageiros = passageiros;
-        this.escalas = escalas;
+        this.passageiros = new ArrayList<>();
+        this.escalas = new ArrayList<>();
         this.estadoDoVoo = estadoDoVoo;
     }
     

@@ -30,5 +30,5 @@ public class SistemaFidelidade {
             this.pontos -= pontosParaResgate;
             return true;
         }
-    }
+    }  
 }

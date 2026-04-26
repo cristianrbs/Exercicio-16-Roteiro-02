@@ -83,18 +83,18 @@ public class Gerenciador {
         }
     }
     
-    public void iniciarVoo(Voo voo){
-        if(!voos.contains(voo)){
+    public void iniciarVoo(Voo numVoo){
+        if(!voos.contains(numVoo)){
             System.out.println("Voo não encontrado!");
-        }else if(voo.getEstadoDoVoo().equalsIgnoreCase("Voando")){
-            System.out.println("O voo " + voo.getNumVoo() + "já está voando.");
+        }else if(numVoo.getEstadoDoVoo().equalsIgnoreCase("Voando")){
+            System.out.println("O voo " + numVoo.getNumVoo() + "já está voando.");
             return;
-        }else if(voo.getEstadoDoVoo().equalsIgnoreCase("Concluído")){
-            System.out.println("O voo" + voo.getNumVoo() + "já foi concluído.");
+        }else if(numVoo.getEstadoDoVoo().equalsIgnoreCase("Concluído")){
+            System.out.println("O voo" + numVoo.getNumVoo() + "já foi concluído.");
             return;
         }
     
-        voo.alterarEstado("Voando");
-        System.out.println("O voo " + voo.getNumVoo() + "já foi concluído.");
+        numVoo.alterarEstado("Voando");
+        System.out.println("O voo " + numVoo.getNumVoo() + "já foi concluído.");
     }
 }
