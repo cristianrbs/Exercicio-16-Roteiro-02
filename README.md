@@ -11,6 +11,8 @@ src/
 │   ├── Passageiro.java
 │   ├── Voo.java
 │   └── Aeroporto.java
+├── Gerentes/
+│   ├── Gerenciador.java
 └── main/
     └── Main.java
 ```
