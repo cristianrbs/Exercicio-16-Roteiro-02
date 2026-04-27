@@ -27,9 +27,9 @@ public class Gerenciador {
     
     public void removerVoos(Voo voo){
         if(!voos.contains(voo)){
-            voos.remove(voo);
-        }else{
             System.out.println("Esse Voo não existe!");
+        }else{
+            voos.remove(voo);
         }
     }
     
@@ -95,6 +95,5 @@ public class Gerenciador {
         }
     
         numVoo.alterarEstado("Voando");
-        System.out.println("O voo " + numVoo.getNumVoo() + "já foi concluído.");
     }
 }

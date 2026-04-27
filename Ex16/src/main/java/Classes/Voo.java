@@ -47,13 +47,21 @@ public class Voo {
     //metodo toString
     @Override
     public String toString() {
-        return "Voo{" + "numVoo=" + numVoo 
-                + ", destino=" + destino 
-                + ", capacidadeMaxima=" + capacidadeMaxima 
-                + ", passageiros=" + passageiros 
-                + ", escalas=" + escalas 
-                + ", estadoDoVoo=" + estadoDoVoo 
-                + '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Numero do Voo: ").append(this.numVoo).append("\n");
+        sb.append("Destino: ").append(this.destino).append("\n");
+        sb.append("Capacidade maxima: ").append(this.capacidadeMaxima).append("\n");
+        sb.append("Lista de Passageiros: ").append(this.passageiros).append("\n");
+        sb.append("Lista de escalas: ").append(this.escalas).append("\n");
+        sb.append("Estado do Voo: ").append(this.estadoDoVoo).append("\n");
+        
+        for(int i = 0; i < passageiros.size(); i++){
+            sb.append(passageiros.get(i).toString());        
+        }
+        for(int i = 0; i < escalas.size(); i++){
+            sb.append(escalas.get(i).toString());
+        }
+        return sb.toString();
     }
     
     //getters e setters

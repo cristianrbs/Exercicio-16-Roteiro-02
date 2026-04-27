@@ -77,6 +77,5 @@ public class Passageiro {
         }
         final Passageiro other = (Passageiro) obj;
         return Objects.equals(this.CPF, other.CPF);
-    }
-    
+    }  
 }

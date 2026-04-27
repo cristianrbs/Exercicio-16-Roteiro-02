@@ -31,6 +31,7 @@ public class Aeroporto {
         return sb.toString();
     }
     
+    //metodo voos com prejuizo
     public void VoosComPrejuizo(){
         
         for(int i = 0; i <= voos.size(); i++){
